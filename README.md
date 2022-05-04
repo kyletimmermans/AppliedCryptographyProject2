@@ -4,4 +4,4 @@
 select a scheme for a given cryptography primitive</div>
 
 ## Planning
-- [ ] Specific framework for website, Django?
+- [ ] Using NodeJS
