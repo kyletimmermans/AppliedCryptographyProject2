@@ -1,0 +1,22 @@
+{
+  "name": "appliedcryptographyproject2",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">Type 2: Designing a Q/A-interface for helping a non-expert user to\r select a scheme for a given cryptography primitive</div>",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyletimmermans/AppliedCryptographyProject2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyletimmermans/AppliedCryptographyProject2/issues"
+  },
+  "homepage": "https://github.com/kyletimmermans/AppliedCryptographyProject2#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
