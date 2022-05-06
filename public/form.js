@@ -1,5 +1,6 @@
 var next_click=document.querySelectorAll(".next-click");
 var back_click=document.querySelectorAll(".back-click");
+var submit_click=document.querySelectorAll(".submit-click");
 var main_form=document.querySelectorAll(".main");
 var list=document.querySelectorAll(".progress-bar li")
 let formnumber=0;
@@ -19,6 +20,24 @@ back_click.forEach(function(back_page){
     back_page.addEventListener('click',function(){
          formnumber--;
          updateform();   
+    });
+});
+
+submit_click.forEach(function(submit){
+    submit.addEventListener('click',function(){
+        var form_options=document.querySelectorAll(".main input");
+        var i = 0;
+        var options = [];
+        while (i < form_options.length) {
+            if (form_options[i].checked){
+                options.push(form_options[i].id);
+            }
+            i++;
+        }
+        console.log(options);
+        if (options.includes('quantum-yes')) {
+            location.href = '/post-quantum';
+        }
     });
 });
 

@@ -7,7 +7,15 @@ const port = process.env.PORT || 8080
 app.use('/public', express.static('public'))
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/index.html'));
+  res.sendFile(path.join(__dirname, '/main.html'));
+})
+
+app.get('/questionaire', (req, res) => {
+  res.sendFile(path.join(__dirname, '/form.html'));
+})
+
+app.get('/post-quantum', (req, res) => {
+  res.sendFile(path.join(__dirname, '/result-quantum.html'));
 })
 
 app.listen(port)
