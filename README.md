@@ -6,6 +6,8 @@ select a scheme for a given cryptography primitive</div>
 </br>
 
 ## How to Run:
-1. npm install
-2. npm start
-3. Visit http://localhost:8080
+1. git clone https://github.com/kyletimmermans/AppliedCryptographyProject2.git
+2. cd AppliedCryptographyProject2
+3. npm install
+4. npm start
+5. Visit http://localhost:8080
