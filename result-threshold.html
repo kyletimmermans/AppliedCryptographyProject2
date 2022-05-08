@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pretty Good Primitives</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="public/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="public/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="public/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <h1><a href="/">Pretty Good Primitives</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="dropdown"><a href="#"><span>Digital Signature Schemes</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/factoring">Factoring</a></li>
+              <li><a href="/discrete-log">Discrete Log</a></li>
+              <li><a href="/elliptic-curve">Elliptic Curve</a></li>
+              <li><a href="/hash">Cryptography Hash</a></li>
+              <li><a href="/post-quantum">Post-quantum</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="fa fa-bars mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Threshold Cryptosystem</h1>
+      <h2>We would like to recommend this to you based on your answers of your questionaire</h2>
+      <h2>Read on below for more on this function!</h2>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Threshold Cryptosystems</h2>
+        </div>
+        <div class="col-4 mx-auto">
+            <img src="public/threshold.png" class="img-fluid" alt="threshold">
+        </div>
+        <div class="row">
+          <div class="col-lg-12 pt-4 pt-lg-0 order-1 order-lg-1">
+            <h3>Explanation</h3>
+            <p>
+	    The principle of a threshold cryptosystem is a cryptosystem that requires t of n parties to cooperate in the creation a signature. More formally, in threshold signature schemes the secret key is distributed among n parties with the help of a trusted dealer or without it by running an interactive protocol among all parties. To sign a message M any subset of more than t parties can use their shares of the secret and execute an interactive signature generation protocol, which outputs a signature of M that can be verified by anybody using the unique fixed public key. The security notion for threshold signature schemes requires that no polynomial-time adversary that corrupts any t parties can learn any information about the secret key or can forge a valid signature on a new message of its choice. An important property of threshold signature schemes is robustness, which requires that even t malicious parties that deviate from the protocol cannot prevent it from generating a valid signature. Another useful property of a threshold signature scheme is proactivness (or periodic refreshment of shares of a secret) whose goal is to protect a system from an adversary that builds-up knowledge of a secret by several attempted break-ins to several locations. In general, the main goals of threshold signature constructions are to provably achieve the following properties: to support as high a threshold tas possible, to avoid use of a trusted dealer, to be robust, proactive and as efficient as possible in terms of computation, interaction and length of the shares.<a href="https://www.iacr.org/archive/pkc2003/25670031/25670031.pdf">[1]</a>
+            </p>
+            <h3>Implementation</h3>
+	    There are few implemenations of threshold cryptosystems, and in fact nist <a href="https://csrc.nist.gov/publications/detail/nistir/8214a/final">recently published</a> a roadmap for standardizing the criteria for for threshold schemes for cryptographic primitives. There are few implementations of working threshold cryptosystems, but <a href="https://github.com/poanetwork/threshold_crypto">this one</a> is described in the paper in link [1], and has been officially <a href="https://github.com/poanetwork/wiki/wiki/Threshold-Crypto-Audit">audited</a> by JP Aumasson 
+	
+            <h3>Want to learn more about Threshold Cryptosystems?</h3>
+            <p>Check out more <a href="https://en.wikipedia.org/wiki/Threshold_cryptosystem">here</a>!</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        Prepared by Pretty Good Primitives
+      </div>
+    </div>
+  </footer>
+
+  <!-- Template Main JS File -->
+  <script src="public/main.js"></script>
+
+</body>
+
+</html>

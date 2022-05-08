@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pretty Good Primitives</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="public/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="public/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="public/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <h1><a href="/">Pretty Good Primitives</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="dropdown"><a href="#"><span>Digital Signature Schemes</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/factoring">Factoring</a></li>
+              <li><a href="/discrete-log">Discrete Log</a></li>
+              <li><a href="/elliptic-curve">Elliptic Curve</a></li>
+              <li><a href="/hash">Cryptography Hash</a></li>
+              <li><a href="/post-quantum">Post-quantum</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="fa fa-bars mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Designated Verifier Signature</h1>
+      <h2>We would like to recommend this to you based on your answers of your questionaire</h2>
+      <h2>Read on below for more on this scheme!</h2>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Ring Signatures</h2>
+        </div>
+        <div class="col-4 mx-auto">
+            <img src="public/designated.png" class="img-fluid" alt="Ring Signature">
+        </div>
+        <div class="row">
+          <div class="col-lg-12 pt-4 pt-lg-0 order-1 order-lg-1">
+            <h3>Explanation</h3>
+            <p>
+	    Standard digital signature schemes allow a signer to sign messages, so that everyone can verify the authenticity of the messages. In addition, digital signature schemes have a non-repudiation property, which guarantees that a signer cannot lie about messages he has signed. However, sometimes the non-repudiation property is not needed in practice. Moreover there are cases where this property is undesired. For example the signer should not present signatures to other parties when signing personal health records, income summary, or an offer of a tenderer in e-auction system. Thus we may need a designated verifier signature (DVS for short) scheme which makes it possible to a signer A to convince the designated verifier B that a message he signed is authentic. However, neither A nor the designated verifier B can convince any other party of authenticity of that message. This is achieved by ability of B to generate indistinguishable signatures from those produced by A. Thus no one else can tell whether the signature was created by A or B.<a href="https://eprint.iacr.org/2010/191.pdf">[1]</a>
+            </p>
+            <h3>Want to learn more about Designated Verifier Signatures?</h3>
+            <p>Check out more here! - <a href="https://en.wikipedia.org/wiki/Designated_verifier_signature">https://en.wikipedia.org/wiki/Designated_verifier_signature</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        Prepared by Pretty Good Primitives
+      </div>
+    </div>
+  </footer>
+
+  <!-- Template Main JS File -->
+  <script src="public/main.js"></script>
+
+</body>
+
+</html>

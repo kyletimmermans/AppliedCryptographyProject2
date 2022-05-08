@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pretty Good Primitives</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="public/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="public/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="public/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <h1><a href="/">Pretty Good Primitives</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="dropdown"><a href="#"><span>Digital Signature Schemes</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/factoring">Factoring</a></li>
+              <li><a href="/discrete-log">Discrete Log</a></li>
+              <li><a href="/elliptic-curve">Elliptic Curve</a></li>
+              <li><a href="/hash">Cryptography Hash</a></li>
+              <li><a href="/post-quantum">Post-quantum</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="fa fa-bars mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Ring Signatures</h1>
+      <h2>We would like to recommend this to you based on your answers of your questionaire</h2>
+      <h2>Read on below for more on this function!</h2>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Ring Signatures</h2>
+        </div>
+        <div class="col-4 mx-auto">
+            <img src="public/ring.png" class="img-fluid" alt="Ring Signature">
+        </div>
+        <div class="row">
+          <div class="col-lg-12 pt-4 pt-lg-0 order-1 order-lg-1">
+            <h3>Explanation</h3>
+            <p>
+	    Ring signatures enable a user to sign a message so that a “ring” of possible signers (of which the user is a member) is identified, without revealing exactly which member of that ring actually generated the signature. This notion was first formally introduced by Rivest, Shamir, and Tauman [21], and ring signatures — along with the related notion of ring/ad-hoc identification schemes — have been studied extensively since then. Ring signatures are related, but incomparable, to the notion of group signatures. On the one hand, group signatures have the additional feature that the anonymity of a signer can be revoked (i.e., the signer can be traced) by a designated group manager. On the other hand, ring signatures allow greater flexibility: no centralized group manager or coordination among the various users is required (indeed, users may be unaware of each other at the time they generate their public keys), rings may be formed completely “on-the-fly” and in an ad-hoc manner, and users are given fine-grained control over the level of anonymity associated with any particular signature (via selection of an appropriate ring).<a href="https://eprint.iacr.org/2005/304.pdf">[1]</a>
+            </p>
+            <h3>Implementation</h3>
+            <p>
+	    For the purpose of generating a ring signature, you can adapt the well-audited <a href="https://github.com/moneroexamples/ring-signatures/blob/master/main.cpp">code</a> from the Monero, a cryptocurrency which uses ring signatures to sign transactions.
+            </p>
+            <h3>Want to learn more about Ring Signatures?</h3>
+            <p>Check out more here! - <a href="https://en.wikipedia.org/wiki/Ring_signature">https://en.wikipedia.org/wiki/Ring_signature</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        Prepared by Pretty Good Primitives
+      </div>
+    </div>
+  </footer>
+
+  <!-- Template Main JS File -->
+  <script src="public/main.js"></script>
+
+</body>
+
+</html>
