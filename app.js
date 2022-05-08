@@ -18,5 +18,13 @@ app.get('/post-quantum', (req, res) => {
   res.sendFile(path.join(__dirname, '/result-quantum.html'));
 })
 
+app.get('/factoring', (req, res) => {
+  res.sendFile(path.join(__dirname, '/result-factoring.html'));
+})
+
+app.get('/elliptic-curve', (req, res) => {
+  res.sendFile(path.join(__dirname, '/result-elliptic.html'));
+})
+
 app.listen(port)
 console.log('Server started at http://localhost:' + port);
