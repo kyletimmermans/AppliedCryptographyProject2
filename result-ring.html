@@ -67,18 +67,18 @@
         <div class="section-title">
           <h2>About Ring Signatures</h2>
         </div>
-        <div class="col-4 mx-auto">
+        <div class="col-6 mx-auto">
             <img src="public/ring.png" class="img-fluid" alt="Ring Signature">
         </div>
         <div class="row">
           <div class="col-lg-12 pt-4 pt-lg-0 order-1 order-lg-1">
             <h3>Explanation</h3>
             <p>
-	    Ring signatures enable a user to sign a message so that a “ring” of possible signers (of which the user is a member) is identified, without revealing exactly which member of that ring actually generated the signature. This notion was first formally introduced by Rivest, Shamir, and Tauman [21], and ring signatures — along with the related notion of ring/ad-hoc identification schemes — have been studied extensively since then. Ring signatures are related, but incomparable, to the notion of group signatures. On the one hand, group signatures have the additional feature that the anonymity of a signer can be revoked (i.e., the signer can be traced) by a designated group manager. On the other hand, ring signatures allow greater flexibility: no centralized group manager or coordination among the various users is required (indeed, users may be unaware of each other at the time they generate their public keys), rings may be formed completely “on-the-fly” and in an ad-hoc manner, and users are given fine-grained control over the level of anonymity associated with any particular signature (via selection of an appropriate ring).<a href="https://eprint.iacr.org/2005/304.pdf">[1]</a>
+	    Ring signatures enable a user to sign a message so that a “ring” of possible signers (of which the user is a member) is identified, without revealing exactly which member of that ring actually generated the signature. Ring signatures are related, but incomparable, to the notion of group signatures. On the one hand, group signatures have the additional feature that the anonymity of a signer can be revoked (i.e., the signer can be traced) by a designated group manager. On the other hand, ring signatures allow greater flexibility: no centralized group manager or coordination among the various users is required (indeed, users may be unaware of each other at the time they generate their public keys), rings may be formed completely “on-the-fly” and in an ad-hoc manner, and users are given fine-grained control over the level of anonymity associated with any particular signature (via selection of an appropriate ring).<a href="https://eprint.iacr.org/2005/304.pdf">[1]</a>
             </p>
             <h3>Implementation</h3>
             <p>
-	    For the purpose of generating a ring signature, you can adapt the well-audited <a href="https://github.com/moneroexamples/ring-signatures/blob/master/main.cpp">code</a> from the Monero, a cryptocurrency which uses ring signatures to sign transactions.
+	    For the purpose of generating a ring signature, you can adapt the well-audited <a href="https://github.com/moneroexamples/ring-signatures/blob/master/main.cpp">code</a> from Monero, a cryptocurrency which uses ring signatures to sign transactions.
             </p>
             <h3>Want to learn more about Ring Signatures?</h3>
             <p>Check out more here! - <a href="https://en.wikipedia.org/wiki/Ring_signature">https://en.wikipedia.org/wiki/Ring_signature</a></p>
