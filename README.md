@@ -5,7 +5,11 @@ select a scheme for a given cryptography primitive</div>
 
 </br>
 
-## How to Run:
+### <div align="center">https://d57e-71-19-150-253.ngrok.io/</div>
+
+</br>
+
+### How to Run Locally:
 1. git clone https://github.com/kyletimmermans/AppliedCryptographyProject2.git
 2. cd AppliedCryptographyProject2
 3. npm install
