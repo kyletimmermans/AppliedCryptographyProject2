@@ -23,13 +23,8 @@ RING VS GROUP SIGNATURES
 https://www.mdpi.com/2410-387X/6/1/3/pdf
 
 Would you like to anonymously generate a signature by any member of a set of users that each have keys?
-YES(ring signature, group signature) NO(else)
-
-Is it important that you can form an ad-hoc group without setup?
 YES(ring signature) NO(else)
 
-Do you want the ability for an authority to revoke the signer's anonymity among the set? 
-YES(group signature) NO(ring signature)
 
 ***
 DESIGNATED VERIFIER SIGNATURE

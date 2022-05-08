@@ -36,13 +36,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li class="dropdown"><a href="#"><span>Digital Signature Schemes</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Digital Signatures</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="/factoring">Factoring</a></li>
-              <li><a href="/discrete-log">Discrete Log</a></li>
-              <li><a href="/elliptic-curve">Elliptic Curve</a></li>
-              <li><a href="/hash">Cryptography Hash</a></li>
-              <li><a href="/post-quantum">Post-quantum</a></li>
+              <li><a href="/rsa">RSA</a></li>
+              <li><a href="/ecdsa">ECDSA</a></li>
+              <li><a href="/lamport">Lamport</a></li>
+              <li><a href="/gottesman">Gottesman-Chuang</a></li>
             </ul>
           </li>
         </ul>
@@ -55,7 +54,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-      <h1>Hardness of Factoring</h1>
+      <h1>RSA Scheme</h1>
       <h2>We would like to recommend this to you based on your answers of your questionaire</h2>
       <h2>Read on below for more on this function!</h2>
     </div>
@@ -65,7 +64,7 @@
     <section id="about" class="about">
       <div class="container">
         <div class="section-title">
-          <h2>About Hardness of Factoring</h2>
+          <h2>About the RSA Scheme</h2>
         </div>
         <div class="col-4 mx-auto">
             <img src="public/PrimeDecompositionExample.png" class="img-fluid" alt="Integer Factorization">
@@ -81,7 +80,7 @@
             <p>
               Typical implementations of the Hardness of Factoring concept (RSA) are used for smaller key lengths. That is why RSA is so commonly used to communicate shared keys for symmetric-key schemes. If you’re not concerned about quantum attacks, then Hardness of Factoring could be the choice for you. Use this if you don’t want to work in polynomial time. Hardness of factoring can produce some very powerful results; in 2019, a team of researchers determined that in order to break a 1024-bit RSA modulus, a machine with 500 times the strength of a computer with 900 core-years of computing power would be needed. Hardness of factoring is definitely a cryptographic tool you want in your toolbelt when dealing with digital signatures.
             </p>
-            <h3>Why others wouldn’t work</h3>
+            <h3>Why others would not work</h3>
             <p>
               Other mathematical processes can be solved or dealt with in polynomial time whereas the hardness of factorization (integer factorization) has no known algorithm that can factor all integers in polynomial time. RSA is also one of the most well known, oldest, implementations of the hardness of factoring concepts. Thus, it has had the most research and stress tests done to it, proving its reliability, which other algorithms do not have to boast.
             </p>
@@ -89,7 +88,12 @@
             <p>Check out more here! - <a href="https://en.wikipedia.org/wiki/Integer_factorization">https://en.wikipedia.org/wiki/Integer_factorization</a></p>
           </div>
         </div>
-
+        <div class="row">
+          <p>
+            A sample of this scheme in Python can be found here...
+          </p>
+          <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@EricSihaoLin/RSA-Sign-and-Verify?lite=true"></iframe>
+        </div>
       </div>
     </section>
   </main>
