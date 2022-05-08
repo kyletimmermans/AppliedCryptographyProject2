@@ -25,7 +25,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f2f9f8;
+  background-color: #f0eeff;
 }
 
 .section-title {
@@ -386,7 +386,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About Us
+# About Section
 --------------------------------------------------------------*/
 .about h3 {
   font-weight: 400;
@@ -407,6 +407,40 @@ section {
 }
 .about p:last-child {
   margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Compare Section
+--------------------------------------------------------------*/
+.ccompare .icon-box {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.compare .icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.compare .icon i {
+  color: #a89af0;
+  font-size: 42px;
+}
+.compare .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.compare .title a {
+  color: #343a40;
+  transition: 0.3s;
+}
+.compare .icon-box:hover .title a {
+  color: #a89af0;
+}
+.compare .description {
+  line-height: 24px;
+  font-size: 14px;
 }
 
 /*--------------------------------------------------------------

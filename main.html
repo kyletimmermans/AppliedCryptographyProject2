@@ -36,7 +36,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li class="dropdown"><a href="#"><span>One-way Functions</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Digital Signatures</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="/factoring">Factoring</a></li>
               <li><a href="/discrete-log">Discrete Log</a></li>
@@ -56,9 +56,9 @@
   <section id="hero">
     <div class="hero-container">
       <h1>Welcome to Pretty Good Primitives</h1>
-      <h2>We are here to help you determine which one-way function may be best suited for your application!</h2>
-      <h2>All you have to do is to take a short questionaire with us.</h2>
-      <a href="/questionaire" class="btn-get-started">Take the Questionaire</a>
+      <h2>We are here to help you determine which digital signature scheme may be best suited for your application!</h2>
+      <h2>All you have to do is to take a short questionnaire with us.</h2>
+      <a href="/questionaire" class="btn-get-started">Take the Questionnaire</a>
     </div>
   </section><!-- #hero -->
 
@@ -78,23 +78,160 @@
               Made by Eric Lin, Charlie Thomas and Kyle Timmermans.
             </p>
             <p>
-              Our project will focus on the one-way functions that we have been presented in class. Our questionaire 
+              Our project will focus on the digital signature functions that we have been presented in class. Our questionnaire 
               asks users to weight between speed, collision resistance, and reversal hardness. We cover the following 
               functions taught in class:
             </p>
             <ul>
-              <li><i class="fa fa-check-circle"></i> Factoring</li>
-              <li><i class="fa fa-check-circle"></i> Discrete Log</li>
-              <li><i class="fa fa-check-circle"></i> Elliptic Curve</li>
-              <li><i class="fa fa-check-circle"></i> Cryptography Hash</li>
-              <li><i class="fa fa-check-circle"></i> Post-quantum Functions</li>
+              <li><i class="fa fa-check-circle"></i> RSA</li>
+              <li><i class="fa fa-check-circle"></i> Schnorr</li>
+              <li><i class="fa fa-check-circle"></i> DSA</li>
+              <li><i class="fa fa-check-circle"></i> ECDSA</li>
+              <li><i class="fa fa-check-circle"></i> Lamport</li>
+              <li><i class="fa fa-check-circle"></i> Gottesman-Chuang scheme</li>
             </ul>
             <p>
               We hope that this would help you make an informed decision in your application!
             </p>
           </div>
         </div>
+      </div>
+    </section>
+    <section id="compare" class="compare section-bg">
+      <div class="container">
 
+        <div class="section-title">
+          <h2>Compare Digital Signature Schemes</h2>
+          <p>We have included an at-a-glance chart to compare and contrast the different signature schemes.</p>
+          <p>Runtime and speed complexity is provided by OpenSSL implementations along with their recommended key sizes.</p>
+        </div>
+
+        <div class="row">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Signature Protocol</th>
+                <th scope="col">Hardness Assumption</th>
+                <th scope="col">Recommended Minimum Keysize</th>
+                <th scope="col">Sign/s</th>
+                <th scope="col">Verify/s</th>
+                <th scope="col">Quantum Proof</th>
+                <th scope="col">Advantage</th>
+                <th scope="col">Disadvantage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- Protocol -->
+                <th scope="row">Hashed RSA</th>
+                <!-- Hardness Assumption -->
+                <td>RSA + Random Oracle</td>
+                <!-- Key/Signature Size -->
+                <td>2048 bits</td>
+                <!-- Sign/s -->
+                <td>1900</td>
+                <!-- Verify/s -->
+                <td>66896</td>
+                <!-- Quantum Speedup -->
+                <td><i class="fa fa-times-circle"></td>
+                <!-- Advantages -->
+                <td>Easy to implement, withstood the test against time so far</td>
+                <!-- Disadvantages -->
+                <td>Slow data transfer, relies on third party to distribute and verify public keys</td>
+              </tr>
+              <tr>
+                <!-- Protocol -->
+                <th scope="row">DSA</th>
+                <!-- Hardness Assumption -->
+                <td>Discrete Log over Zp</td>
+                <!-- Key/Signature Size -->
+                <td>2048 bits</td>
+                <!-- Sign/s -->
+                <td>5621</td>
+                <!-- Verify/s -->
+                <td>6366</td>
+                <!-- Quantum Speedup -->
+                <td><i class="fa fa-times-circle"></td>
+                <!-- Advantages -->
+                <td>Signature size is small, efficient to store</td>
+                <!-- Disadvantages -->
+                <td>Verification requires computation time, data is not encrypted</td>
+              </tr>
+              <tr>
+                <!-- Protocol -->
+                <th scope="row">ECDSA</th>
+                <!-- Hardness Assumption -->
+                <td>Discrete Log over EC</td>
+                <!-- Key/Signature Size -->
+                <td>256 bits</td>
+                <!-- Sign/s -->
+                <td>61117</td>
+                <!-- Verify/s -->
+                <td>20498</td>
+                <!-- Quantum Speedup -->
+                <td><i class="fa fa-times-circle"></td>
+                <!-- Advantages -->
+                <td>Very fast computation for sign and verification compared to RSA and DSA</td>
+                <!-- Disadvantages -->
+                <td>Newer scheme, not widely used, NIST curve controversy</td>
+              </tr>
+              <tr>
+                <!-- Protocol -->
+                <th scope="row">Schnorr</th>
+                <!-- Hardness Assumption -->
+                <td>Discrete Log</td>
+                <!-- Key/Signature Size -->
+                <td>256 bits</td>
+                <!-- Sign/s -->
+                <td>32263<a href="https://asecuritysite.com/signatures/schnorr_test">*</a></td>
+                <!-- Verify/s -->
+                <td>75<a href="https://asecuritysite.com/signatures/schnorr_test">*</a></td>
+                <!-- Quantum Speedup -->
+                <td><i class="fa fa-times-circle"></td>
+                <!-- Advantages -->
+                <td>Fast signature generation for multi-party setups</td>
+                <!-- Disadvantages -->
+                <td>Verification takes significant computation time</td>
+              </tr>
+              <tr>
+                <!-- Protocol -->
+                <th scope="row">Lamport Signature</th>
+                <!-- Hardness Assumption -->
+                <td>SHA 256</td>
+                <!-- Key/Signature Size -->
+                <td>512 x 256 bits</td>
+                <!-- Sign/s -->
+                <td>204<a href="https://www.researchgate.net/publication/347126372_On_the_Efficiency_of_the_Lamport_Signature_Scheme">*</a></td>
+                <!-- Verify/s -->
+                <td>1865<a href="https://www.researchgate.net/publication/347126372_On_the_Efficiency_of_the_Lamport_Signature_Scheme">*</a></td>
+                <!-- Quantum Speedup -->
+                <td><i class="fa fa-check-circle"></td>
+                <!-- Advantages -->
+                <td>More secure than tranditional schemes in the face of quantum computing</td>
+                <!-- Disadvantages -->
+                <td>Very large signature sizes, many hash computation needed</td>
+              </tr>
+              <tr>
+                <!-- Protocol -->
+                <th scope="row">Gottesman-Chuang scheme</th>
+                <!-- Hardness Assumption -->
+                <td>Unconditional security</td>
+                <!-- Key/Signature Size -->
+                <td>O(2N log d) - d being message space and N is the codeword size</td>
+                <!-- Sign/s -->
+                <td>Efficient<a href="https://arxiv.org/pdf/2012.15493.pdf">*</a></td>
+                <!-- Verify/s -->
+                <td>Efficient<a href="https://arxiv.org/pdf/2012.15493.pdf">*</a></td>
+                <!-- Quantum Speedup -->
+                <td><i class="fa fa-check-circle"></td>
+                <!-- Advantages -->
+                <td>Efficient and error correction built in</td>
+                <!-- Disadvantages -->
+                <td>Requires quantum computer and qubits</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
   </main>
