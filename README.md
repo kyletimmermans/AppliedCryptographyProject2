@@ -11,21 +11,21 @@ select a scheme for a given cryptography primitive</div>
 </br>
 
 ### Project Features:
-[*] Non-expert user interface
-[*] Simple explanation of recommendation
-[*] Minimal bootstrap design
-[*] Sample implementation code
+- Non-expert user interface
+- Simple explanation of recommendation
+- Minimal bootstrap design
+- Sample implementation code
 
 ### Signature Schemes:
-[*] RSA
-[*] DSA
-[*] ECDSA
-[*] Schnorr
-[*] Lamport
-[*] Gottesman-Chuang
-[*] Ring
-[*] Threshold
-[*] Designated Verifier
+- RSA
+- DSA
+- ECDSA
+- Schnorr
+- Lamport
+- Gottesman-Chuang
+- Ring
+- Threshold
+- Designated Verifier
 
 ### How to Run Locally:
 1. git clone https://github.com/kyletimmermans/AppliedCryptographyProject2.git
