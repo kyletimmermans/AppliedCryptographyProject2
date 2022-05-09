@@ -151,16 +151,7 @@ input[type="radio"]{
     font-weight:600;
     color:#99a1b2;
 }
-#speed-fast:checked~.speed-fast,
-#speed-normal:checked~.speed-normal,
-#reverse-yes:checked~.reverse-yes,
-#reverse-no:checked~.reverse-no,
-#purpose-secret:checked~.purpose-secret,
-#purpose-generate:checked~.purpose-generate,
-#collision-yes:checked~.collision-yes,
-#collision-no:checked~.collision-no,
-#quantum-yes:checked~.quantum-yes,
-#quantum-no:checked~.quantum-no  {
+input[type="radio"]:checked+label {
     border-color: #a89af0;
 }
 
