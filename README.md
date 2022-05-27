@@ -4,9 +4,6 @@
 select a scheme for a given cryptography primitive</div>
 
 ### Chosen Primitive: Digital Signatures
-</br>
-
-### <div align="center">https://92e7-71-19-150-253.ngrok.io/</div>
 
 </br>
 
